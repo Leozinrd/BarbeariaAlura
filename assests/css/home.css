@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+strong, bold{
+	font-weight: bold;
+}
+em{
+	font-style: italic;
+}
+
+/* Início Topo do site*/
+header {
+	background: #BBBBBB;
+	padding: 20px 0;}
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;}
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;}
+/* Fim do topo do site */
+
+#banner{
+	width:100%;
+}
+
+/* Início edição cores */
+.principal{
+	background-color: #FEFEFE;}
+.mapa{
+	background: linear-gradient(#FEFEFE, grey);}
+.beneficios{
+	background: linear-gradient(grey, rgb(73, 73, 73))}
+/* Fim edição cores */
+
+/* Início Larguras divs */
+.principal{
+	width: 940px;
+	margin: 0 auto;}
+.conteudo-mapa{
+	width: 940px;
+	margin: 0 auto;}
+/* Fim Larguras divs */
+
+.barberpoolimg{
+	max-height: 160px;
+	float: left;}
+
+/* Início do CSS padrão da section */
+section h2, h3, h4{
+	clear: left;
+	text-align: center;
+	font-size: 2em;
+	padding: 2em 0;}
+/* Fim do CSS padrão da section */
+
+/* Início edição conteúdo principal */
+.principal p{
+	padding: 0.5em 0;}
+/* Fim edição conteúdo principal */
+
+/* Início edição mapa */
+.mapa{
+	padding: 3em 0;}
+.mapa p{
+	margin: 0 0 2em 0;}
+/* Fim edição mapa */
+
+/* Início edição benefícios */
+.benef{
+	padding: 3em 0;}
+.conteudo-benef{
+	width: 640px;
+	margin: 0 auto;}
+.conteudo-benef ul{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;}
+.conteudo-benef li{
+	line-height: 1.5;}
+.conteudo-benef li:before{
+	content:"✪";}
+.itens:nth-child(1) {
+	font-weight: bold;}
+.imgbenef{
+	width: 60%;
+	opacity: 1;
+	transition: 1s all;
+	box-shadow: 10px 10px 10px black;}
+.imgbenef:hover{
+	opacity: 0.3;}
+/* Fim edição benefícios */
+
+/* Início edição section vídeo */
+.video{
+	width: 560px;
+	margin: 0 auto;
+	padding: 2em 0;}
+/* Fim edição section vídeo */
+
+/* Início Rodapé do site*/
+footer {
+	text-align: center;
+	background: url("../img/bg.jpg");
+	padding: 40px 0;}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;}
+/* Fim do rodapé do site */
+
+/*Responsividade largura max 480px */
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-benef, .conteudo-mapa, .video {
+		width: auto;}
+	h1{
+		text-align: center;}
+	nav{
+		position: static;}
+	.conteudo-benef ul{
+		width: 100%;}
+	.imgbenef{
+		width: 100%;}
+}
+/*Responsividade largura max 480px */
+
+@media screen and (min-width: 800px) and (max-width: 940px){
+	.caixa, .principal, .conteudo-benef, .conteudo-mapa, .video{
+		width: auto;}
+	h1{
+		text-align: center;}
+	nav{
+		position: static;
+		text-align: center;
+		padding: 1em 0;}
+	section h2, h3, h4{
+		padding: 1em 0;	}
+	.mapa{
+		padding: 1em 0 0 0;	}
+	.conteudo-mapa{
+		width: 700px;}
+	.conteudo-benef ul{
+		width: 40%;}
+	.imgbenef{
+		width: 60%;}
+	.video{
+		width: 70%;}
+	.benef{
+		width: 640px;
+		margin: 0 auto;
+	}
+}
